@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La casa della follia</title>
+    <title>Pali&Dispari</title>
     <!-- FRAMEWORK -->
     <link rel="stylesheet" href="css/utility-framework.css">
     <!-- STYLE -->
     <link rel="stylesheet" href="js/script.js">
 </head>
+<main>
+    <div class="container">
+        <div class="content-top">
+            <div class="select">
+                <label for="even-odd">Scegli un valore tra pari e dispari:</label>
+                <select name="even-odd" id="even-odd">
+                    <option value=""></option>
+                    <option value="even">Pari</option>
+                    <option value="odd">Dispari</option>
+                </select>   
+            </div>
+            <div class="number-input">
+                <input type="text" id="usernumber" placeholder="Scegli un numero">
+                <button id="go">Invia</button>
+
+            </div>
+            <div class="output">
+                <h2 id="choice">La tua scelta:</h2>
+                <h2 id="usernumber-output">Il numero che hai scelto:</h2>
+                <h2 id="pcnumber-output">Il numero generato dal pc:</h2>
+                <h2 id="sum">La somma dei numeri:</h2>
+                <h2 id="result"></h2>
+            </div>
+        </div>
+    </div>
+</main>
 <body>
     <!-- PALINDROMA -->
     <!-- /PALINDROMA -->
