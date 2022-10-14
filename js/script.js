@@ -44,6 +44,7 @@ button.addEventListener ("click", function() {
     } else { 
         result.innerHTML = ("Hai perso! Il numero è dispari")
     }
+    
     // OUTPUT
     // output positivo
     // altrimenti, output negativo
