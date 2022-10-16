@@ -33,8 +33,10 @@ paligo.addEventListener ("click", function (){
 let wellDone =document.getElementById("well-done");
     if (palindroma == true) {
         wellDone.innerHTML = "La parola è palindroma. Ben fatto!... per ora"
+        wellDone.classList.remove("hidden");
     } else {
         alert("Ti abbiamo chiesto una cosa semplice, eppure hai sbagliato. Riprova!");
+        wellDone.classList.add("hidden");
     }
 })
 
