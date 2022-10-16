@@ -8,42 +8,49 @@
     <!-- FRAMEWORK -->
     <link rel="stylesheet" href="css/utility-framework.css">
     <!-- STYLE -->
-    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<main>
-    <div class="container">
-        <div class="content-top">
-            <div class="word-input">
-                <input type="text" id="userword" placeholder="Inserisci una parola">
-                <button id="paligo">Invia</button>
-        </div>
-        <div class="content-bottom">
-            <div class="select">
-                <label for="even-odd">Scegli un valore tra pari e dispari:</label>
-                <select name="even-odd" id="even-odd">
-                    <option value="even">Pari</option>
-                    <option value="odd">Dispari</option>
-                </select>   
-            </div>
-            <div class="number-input">
-                <input type="text" id="usernumber" placeholder="Scegli un numero">
-                <button id="go">Invia</button>
-
-            </div>
-            <div class="output">
-                <h2 id="usernumber-output">Il numero che hai scelto:</h2>
-                <h2 id="pcnumber-output">Il numero generato dal pc:</h2>
-                <h2 id="sum">La somma dei numeri:</h2>
-                <h2 id="result"></h2>
-            </div>
-        </div>
-    </div>
-</main>
 <body>
-    <!-- PALINDROMA -->
+    <main>
+        <!-- PALINDROMA -->
+        <div class="content-top">
+            <div class="container">
+                <h2>La Parola Palindroma</h2>
+                <div class="word-input">
+                    <label for="userword">Inserisci una parola palindroma</label>
+                    <input type="text" id="userword" placeholder="Inserisci una parola">
+                    <button id="paligo">Invia</button>
+                    <h3>Attenzione! Assicurati di inserire solo una parola palindroma, o saranno guai</h3>
+                    <h3 id="well-done"></h3>
+                </div>
+            </div>
+        </div>
     <!-- /PALINDROMA -->
     <!-- PARI E DISPARI -->
-    <!-- /PARI E DISPARI -->
+        <div class="content-bottom">
+            <div class="container">
+                <h2>Pari e dispari</h2>
+                <div class="select">
+                    <label class ="e-olabel" for="even-odd">Scegli un valore tra pari e dispari:</label>
+                    <select name="even-odd" id="even-odd">
+                        <option value="even">Pari</option>
+                        <option value="odd">Dispari</option>
+                    </select>   
+                </div>
+                <div class="number-input">
+                    <input type="text" id="usernumber" placeholder="Scegli un numero">
+                    <button id="go">Invia</button>                  
+                </div>
+                <div class="output">
+                    <h3 id="usernumber-output">Il numero che hai scelto:</h3>
+                    <h3 id="pcnumber-output">Il numero generato dal pc:</h3>
+                    <h3 id="sum">La somma dei numeri:</h3>
+                    <h3 id="result"></h3>
+                </div>
+            </div>
+        </div>
+        <!-- /PARI E DISPARI -->
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>

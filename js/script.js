@@ -1,8 +1,6 @@
 // PALINDROMA
 // INPUT
 // chiedo all'utente di inserire una parola
-userWordInput = document.getElementById("userword").value;
-console.log(userWordInput);
 paligo = document.getElementById("paligo");
 // PROCESSING
 // confronto la parola con la stessa parola, ma di ordine inverso
@@ -11,27 +9,33 @@ paligo = document.getElementById("paligo");
 // output positivo
 // altrimenti, output negativo
 paligo.addEventListener ("click", function (){
+    userWordInput = document.getElementById("userword").value;
+    console.log(userWordInput);
     let letters = userWordInput.split ("");
     console.log(letters);
+    let character =""
+    let characterReverse = ""
     let palindroma = false
-    for ( i = 0; i <= letters.length ; i++) {
-        let character = letters[i];
+    for ( i = 0; i <= letters.length -1 ; i++) {
+        character = letters[i];
         console.log(character);
-
-    for ( j = letters.length; j >= 0 ; j--) {
-        let character = letters[j];
-        console.log(character);
-    }}
-        if (i = j ) {
-        polindroma = true;
     }
-})
+        
+    for (j = letters.length-1; j >= 0 ; j--) {
+            characterReverse = letters[j];
+            console.log(characterReverse);
+    }
 
-
-
-
-
-
+    if (character == characterReverse) {
+        palindroma = true
+    }
+    console.log(palindroma);
+let wellDone =document.getElementById("well-done");
+    if (palindroma == true) {
+        wellDone.innerHTML = "La parola è palindroma. Ben fatto!... per ora"
+    } else {
+        alert("Ti abbiamo chiesto una cosa semplice, eppure hai sbagliato. Riprova!");
+    }
 })
 
 // PARI E DISPARI
